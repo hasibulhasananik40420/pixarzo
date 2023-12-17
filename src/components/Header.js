@@ -3,12 +3,16 @@
 
 import Image from "next/image";
 import headerImage from "@/assets/Header/header.png";
+import FadeIn from "./FadeIn";
 
 const Header = () => {
   return (
+   
     <section className="bg-PrimaryColor px-3 py-[52px]">
+     
       <div className="lg:flex items-center gap-[61px] max-w-[1360px] mx-auto">
         {/************* header text part start here *************/}
+        <FadeIn>
         <div className="lg:w-[648px] w-full">
           <h1 className="text-white lg:text-[67px] md:text-[77px] md:leading-[110px] text-[46px] leading-[70px] font-bold lg:leading-[82px]">
             We're an <span className="text-[#47BDFF]">Creative</span> Digital
@@ -36,8 +40,10 @@ const Header = () => {
             </button>
           </span>
         </div>
+        </FadeIn>
         {/************* image part start here *************/}
         <div>
+        <FadeIn>
           <Image
             className="mt-16 md:mt-16 lg:mt-0"
             src={headerImage}
@@ -45,9 +51,11 @@ const Header = () => {
             width={650}
             height={600}
           />
+          </FadeIn>
         </div>
       </div>
     </section>
+   
   );
 };
 

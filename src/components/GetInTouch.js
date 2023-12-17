@@ -3,11 +3,15 @@ import contact from "@/assets/GetInTouch/contact us image.png";
 import GetInTouchIcon from "@/assets/GetInTouch/GetInTouch.png";
 import group from "@/assets/GetInTouch/Group 2.png";
 import Image from "next/image";
+import FadeIn from "./FadeIn";
 
 const GetInTouch = () => {
   return (
+    
     <section className="bg-PrimaryColor mt-[96px]">
+      <FadeIn>
       <div className="max-w-[1320px] mx-auto px-3 pt-20 pb-20 md:pb-20 lg:pb-0 lg:flex gap-[93px]">
+      
         <div>
           <Image src={GetInTouchIcon} alt="" height={40} width={40} />
 
@@ -35,7 +39,8 @@ const GetInTouch = () => {
             width={271}
           />
         </div>
-
+       
+         
          <div className="lg:w-[652px] w-full mt-16 md:mt-16 lg:mt-0">
          <Image
             className="w-full h-full object-cover"
@@ -47,7 +52,9 @@ const GetInTouch = () => {
           />
          </div>
       </div>
+      </FadeIn>
     </section>
+    
   );
 };
 

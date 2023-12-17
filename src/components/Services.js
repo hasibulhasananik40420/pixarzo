@@ -19,7 +19,9 @@ const Services = () => {
              
              {/*************** service card start here ****************/}
              <div>
+            
               <ServiceCard/>
+            
              </div>
 
         </div>

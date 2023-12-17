@@ -11,7 +11,7 @@ const MobileMenu = () => {
   const [show, setShow] = useState(false);
 
   const handleScroll = () => {
-    const scrollThreshold = 400;
+    const scrollThreshold = 300;
     const scrolled = window.scrollY;
 
     if (scrolled > scrollThreshold && !isFixed) {

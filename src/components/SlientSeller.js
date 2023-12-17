@@ -1,7 +1,10 @@
 "use client"
 
+import FadeIn from "./FadeIn"
+
 const SlientSeller = () => {
   return (
+    <FadeIn>
     <section className='max-w-[1320px] mx-auto px-3 '>
 
      <div className='h-[439px] flex items-center justify-between'>
@@ -28,6 +31,7 @@ const SlientSeller = () => {
      </div>
 
     </section>
+    </FadeIn>
   )
 }
 

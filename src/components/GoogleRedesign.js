@@ -2,8 +2,10 @@
 
 import Image from 'next/image'
 import voice from '@/assets/GoogleRedesign/voice.png'
+import FadeIn from './FadeIn'
 const GoogleRedesign = () => {
   return (
+    <FadeIn>
     <section className='max-w-[1320px] mx-auto px-3 my-[96px]'>
        <div className='lg:flex '>
           
@@ -15,7 +17,7 @@ const GoogleRedesign = () => {
                <p className='mt-6 text-[#444] text-[24px] font-normal leading-8'>We create new UI on the Google website for users. Fixed some issues at the user level.</p>
 
 
-               <button className="bg-ButtonColor w-[196px] h-[56px] rounded-[37px] text-white text-[18px] font-semibold leading-6 tracking-[ 0.5px] uppercase mt-12">Learn More</button>
+               <button className="bg-ButtonColor w-[196px] h-[56px] rounded-[37px] text-white text-[18px] font-semibold leading-6 tracking-[ 0.5px] mt-12">Learn More</button>
             </div>
         </div>
 
@@ -25,6 +27,7 @@ const GoogleRedesign = () => {
 
        </div>
     </section>
+    </FadeIn>
   )
 }
 

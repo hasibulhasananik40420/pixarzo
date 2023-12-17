@@ -5,12 +5,15 @@ import image3 from "@/assets/Our-team/image3.png";
 import image4 from "@/assets/Our-team/image4.png";
 import Image from "next/image";
 import { MdArrowForward } from "react-icons/md";
+import FadeIn, { FadeInStagger } from "./FadeIn";
 
 const OurTeamCard = () => {
   return (
     <div>
+       <FadeInStagger faster>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-x-6 gap-y-36 justify-items-center pb-[48px]">
         {/************ our team card 1 start here ***************/}
+        <FadeIn>
         <div className="lg:w-[300px] xl:w-[312px] w-full  relative">
           <Image
             className="object-contain w-full"
@@ -36,8 +39,10 @@ const OurTeamCard = () => {
             </button>
           </div>
         </div>
+        </FadeIn>
 
         {/************ our team card 2 start here ***************/}
+        <FadeIn>
         <div className="lg:w-[300px] xl:w-[312px] w-full relative">
           <Image
             className="object-contain w-full"
@@ -63,8 +68,10 @@ const OurTeamCard = () => {
             </button>
           </div>
         </div>
+        </FadeIn>
 
         {/************ our team card 3 start here ***************/}
+        <FadeIn>
         <div className="lg:w-[300px] xl:w-[312px] w-full relative">
           <Image
             className="object-contain w-full"
@@ -90,8 +97,10 @@ const OurTeamCard = () => {
             </button>
           </div>
         </div>
+        </FadeIn>
 
         {/************ our team card 4 start here ***************/}
+        <FadeIn>
         <div className="lg:w-[300px] xl:w-[312px] w-full relative">
           <Image
             className=" w-full "
@@ -117,6 +126,7 @@ const OurTeamCard = () => {
             </button>
           </div>
         </div>
+        </FadeIn>
       </div>
 
       <div className="flex justify-center mt-12">
@@ -128,6 +138,7 @@ const OurTeamCard = () => {
               </span>
             </button>
       </div>
+      </FadeInStagger>
     </div>
   );
 };

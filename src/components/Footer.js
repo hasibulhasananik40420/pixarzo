@@ -5,10 +5,12 @@ import { GrFacebookOption } from "react-icons/gr";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa6";
 import { FaGoogle } from "react-icons/fa";
+import FadeIn from './FadeIn';
 
 const Footer = () => {
   return (
     <section className="bg-PrimaryColor">
+      <FadeIn>
       <div className='max-w-[1320px] mx-auto px-3 py-[64px] md:flex md:flex-wrap lg:flex justify-between border-b-[1px] border-[#E2E8F0]'>
          
        <div className='lg:w-[294px] w-full'>
@@ -71,6 +73,7 @@ const Footer = () => {
       </div>
 
        <p className='text-[#F5F5F5] text-[16px] font-normal leading-6 text-center py-[32px] '>© Copyright 2023, All Rights Reserved by ClarityUI</p>
+       </FadeIn>
     </section>
   )
 }

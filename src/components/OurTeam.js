@@ -2,10 +2,12 @@
 import teamIcon from '@/assets/Our-team/teamIcon.png'
 import Image from 'next/image'
 import OurTeamCard from './OurTeamCard'
+import FadeIn from './FadeIn'
 
 const OurTeam = () => {
   return (
     <section className="bg-PrimaryColor px-3 py-[80px]">
+       <FadeIn>
         <div className="max-w-[1320px] mx-auto">
            <Image src={teamIcon} alt='' width={40} height={40}/>
 
@@ -18,6 +20,7 @@ const OurTeam = () => {
                  <OurTeamCard/>
              </div>
         </div>
+        </FadeIn>
     </section>
   )
 }
