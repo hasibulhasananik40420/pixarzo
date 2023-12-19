@@ -37,11 +37,11 @@ const MobileMenu = () => {
   };
 
   return (
-    <section className={`${isFixed ? "fixed top-0" : ""} bg-PrimaryColor h-[96px] px-3 transition-all ease-in-out duration-500 w-full z-30 `}>
+    <section className={`${isFixed ? "fixed top-0" : ""} bg-PrimaryColor h-[96px] px-3 transition-all ease-in-out duration-500 w-full z-50 `}>
       <div className="flex justify-between items-center h-[96px] px-3">
         <Logo />
         <div className="">
-          <CiMenuFries onClick={() => setShow(true)} className="text-3xl text-white cursor-pointer" />
+          <CiMenuFries onClick={() => setShow(true)} className="text-3xl text-white font-bold cursor-pointer" />
         </div>
       </div>
 
@@ -49,7 +49,7 @@ const MobileMenu = () => {
         {show && (
           <>
             <motion.div
-              className="fixed top-0 left-0 w-full h-full  z-20"
+              className="fixed top-0 left-0 w-full h-full  z-50"
               onClick={() => setShow(false)}
               initial="hidden"
               animate="visible"
@@ -66,7 +66,7 @@ const MobileMenu = () => {
               exit="hidden"
               transition={{ duration: 0.5 }}
             >
-              <div className="w-[100%] h-full bg-[#112240] flex flex-col z-30 relative pt-20 px-8 md:px-12">
+              <div className="w-[100%] h-full bg-[#112240] flex flex-col z-50 relative pt-20 px-8 md:px-12">
                 <IoMdClose onClick={() => setShow(false)} className="text-3xl cursor-pointer text-red-500 absolute top-4 right-4 duration-300" />
 
                 <div className="flex flex-col gap-8">
