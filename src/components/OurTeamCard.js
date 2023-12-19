@@ -9,12 +9,13 @@ import FadeIn, { FadeInStagger } from "./FadeIn";
 
 const OurTeamCard = () => {
   return (
+    <FadeInStagger >
     <div>
-       <FadeInStagger faster>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-x-6 gap-y-36 justify-items-center pb-[48px]">
+        
         {/************ our team card 1 start here ***************/}
+        <div className="lg:w-[290px] xl:w-[312px] w-full  relative">
         <FadeIn>
-        <div className="lg:w-[300px] xl:w-[312px] w-full  relative">
           <Image
             className="object-contain w-full"
             src={image1}
@@ -30,7 +31,7 @@ const OurTeamCard = () => {
             <p className="text-[#28264D] text-[14px] font-normal leading-[18px] tracking-[0.5px]">
               CEO
             </p>
-            <h3 className="text-[#28264D] text-[24px] font-semibold leading-8 tracking-[0.5px] mt-1">
+            <h3 className="text-[#28264D] text-[24px] md:text-[24px] xl:text-[24px] lg:text-[22px] font-semibold leading-8 tracking-[0.5px] mt-1">
               Alfredo Ottis
             </h3>
 
@@ -38,12 +39,13 @@ const OurTeamCard = () => {
               <span>Read bio</span> <MdArrowForward />
             </button>
           </div>
+          </FadeIn>
         </div>
-        </FadeIn>
+       
 
         {/************ our team card 2 start here ***************/}
+        <div className="lg:w-[290px] xl:w-[312px] w-full relative">
         <FadeIn>
-        <div className="lg:w-[300px] xl:w-[312px] w-full relative">
           <Image
             className="object-contain w-full"
             src={image2}
@@ -59,7 +61,7 @@ const OurTeamCard = () => {
             <p className="text-[#28264D] text-[14px] font-normal leading-[18px] tracking-[0.5px]">
               Brand Designer
             </p>
-            <h3 className="text-[#28264D] text-[24px] font-semibold leading-8 tracking-[0.5px] mt-1">
+            <h3 className="text-[#28264D] text-[24px] md:text-[24px] xl:text-[24px] lg:text-[22px] font-semibold leading-8 tracking-[0.5px] mt-1">
               Cameron Williamson
             </h3>
 
@@ -67,12 +69,12 @@ const OurTeamCard = () => {
               <span>Read bio</span> <MdArrowForward />
             </button>
           </div>
+          </FadeIn>
         </div>
-        </FadeIn>
 
         {/************ our team card 3 start here ***************/}
+        <div className="lg:w-[290px] xl:w-[312px] w-full relative">
         <FadeIn>
-        <div className="lg:w-[300px] xl:w-[312px] w-full relative">
           <Image
             className="object-contain w-full"
             src={image3}
@@ -88,7 +90,7 @@ const OurTeamCard = () => {
             <p className="text-[#28264D] text-[14px] font-normal leading-[18px] tracking-[0.5px]">
               Product Designer
             </p>
-            <h3 className="text-[#28264D] text-[24px] font-semibold leading-8 tracking-[0.5px] mt-1">
+            <h3 className="text-[#28264D] text-[24px] md:text-[24px] xl:text-[24px] lg:text-[22px] font-semibold leading-8 tracking-[0.5px] mt-1">
               Dianne Russell
             </h3>
 
@@ -96,12 +98,12 @@ const OurTeamCard = () => {
               <span>Read bio</span> <MdArrowForward />
             </button>
           </div>
+          </FadeIn>
         </div>
-        </FadeIn>
 
         {/************ our team card 4 start here ***************/}
+        <div className="lg:w-[290px] xl:w-[312px] w-full relative">
         <FadeIn>
-        <div className="lg:w-[300px] xl:w-[312px] w-full relative">
           <Image
             className=" w-full "
             src={image4}
@@ -117,7 +119,7 @@ const OurTeamCard = () => {
             <p className="text-[#28264D] text-[14px] font-normal leading-[18px] tracking-[0.5px]">
               UX Designer
             </p>
-            <h3 className="text-[#28264D] text-[24px] font-semibold leading-8 tracking-[0.5px] mt-1">
+            <h3 className="text-[#28264D] text-[24px] md:text-[24px] xl:text-[24px] lg:text-[22px] font-semibold leading-8 tracking-[0.5px] mt-1">
               Kathryn Murphy
             </h3>
 
@@ -125,8 +127,9 @@ const OurTeamCard = () => {
               <span>Read bio</span> <MdArrowForward />
             </button>
           </div>
+          </FadeIn>
         </div>
-        </FadeIn>
+       
       </div>
 
       <div className="flex justify-center mt-12">
@@ -138,8 +141,8 @@ const OurTeamCard = () => {
               </span>
             </button>
       </div>
-      </FadeInStagger>
     </div>
+    </FadeInStagger>
   );
 };
 

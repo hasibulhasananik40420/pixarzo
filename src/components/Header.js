@@ -7,10 +7,12 @@ import FadeIn from "./FadeIn";
 
 const Header = () => {
   return (
-   
+    // header section start here
+
     <section className="bg-PrimaryColor px-3 py-[52px]">
      
       <div className="lg:flex items-center gap-[61px] max-w-[1360px] mx-auto">
+
         {/************* header text part start here *************/}
         <FadeIn>
         <div className="lg:w-[648px] w-full">
@@ -32,15 +34,13 @@ const Header = () => {
               </span>
             </button>
      
-
-
-
             <button className="bg-[#333156] w-[163px] h-[56px] rounded-[37px] text-white text-[18px] font-bold leading-6 tracking-[0.09px] hover:bg-[#242349] hover:border duration-300">
               Contact Us
             </button>
           </span>
         </div>
         </FadeIn>
+
         {/************* image part start here *************/}
         <div>
         <FadeIn>
@@ -53,8 +53,11 @@ const Header = () => {
           />
           </FadeIn>
         </div>
+
+
       </div>
     </section>
+    // header section end here
    
   );
 };

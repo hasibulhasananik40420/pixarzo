@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar'
 import './globals.css'
 import Footer from '@/components/Footer'
+import ScrollToTop from '@/components/ScrollToTop'
 
 
 export const metadata = {
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
       <body className='font-JakartaFont'>
         <Navbar/>
         {children}
+         <ScrollToTop/>
         <Footer/>
         </body>
     </html>

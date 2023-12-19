@@ -4,6 +4,7 @@ import FadeIn from "./FadeIn"
 
 const SlientSeller = () => {
   return (
+    // SlientSeller section start here
     <FadeIn>
     <section className='max-w-[1320px] mx-auto px-3 '>
 
@@ -18,11 +19,17 @@ const SlientSeller = () => {
            <h1 className='text-[#28264D] text-[40px] font-bold leading-[56px] text-center'>“Bad design shouts at you. Good design is the silent seller.”</h1>
 
             <p className='text-[#444] text-[24px] font-normal leading-8 mt-6'>Shane Meendering</p>
-       
-            <button className="bg-ButtonColor w-[224px] h-[56px] rounded-[37px] text-white text-[18px] font-bold leading-6 tracking-[0.09px] mt-12">
-            View our Designer
-        </button>
+
+
+            <button className="group relative bg-ButtonColor w-[224px] h-[56px] rounded-[37px] text-white text-[18px] font-bold leading-6 tracking-[0.09px] mt-12 overflow-hidden transition duration-300 ease-in-out">
+              <span className="absolute inset-0 bg-gradient-to-r from-[#4CAF50] to-[#2196F3] opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"></span>
+              <span className="relative z-10 flex items-center justify-center h-full">
+              View our Designer
+              </span>
+            </button>
+
         </div>
+        {/************** content part end here ******************/}
 
         <div className='w-[239px] h-[200px] bg-[#E4F5FF] rounded-l-[100px] mt-[240px] md:block hidden'>
 
@@ -32,6 +39,8 @@ const SlientSeller = () => {
 
     </section>
     </FadeIn>
+       // SlientSeller section end here
+
   )
 }
 

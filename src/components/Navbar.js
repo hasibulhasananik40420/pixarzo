@@ -31,21 +31,24 @@ const Navbar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [isFixed]); 
-  
-  // Re-run effect only when isFixed changes
+  }, [isFixed]);   // Re-run effect only when isFixed changes
 
 
   return (
+     // navbar section start here 
    <section>
+    
      <div className={`${
       isFixed ? "fixed top-0" : ""
-    } bg-PrimaryColor h-[96px] px-3 transition-all ease-in-out duration-500 w-full z-50 lg:block hidden`}>
+    } bg-PrimaryColor h-[96px] px-3 transition-all ease-in-out duration-500 w-full z-50 lg:block xl:block hidden`}>
         <div className="max-w-[1360px] mx-auto flex justify-between  items-center h-[96px] ">
            <div>
+            {/*************** logo start here *********************/}
            <Logo/>
+            {/*************** logo end here *********************/}
            </div>
-
+            
+             {/*************** navbar menu item start here *********************/}
             <div className="flex gap-8 mr-10">
                <Link className="h-7 overflow-x-hidden overflow-y-hidden inline-flex relative group" href={'/'}>
                  <h1 className="text-[17px] text-white font-medium leading-[26px] group-hover:text-[#FF338F]">Home</h1>
@@ -74,16 +77,20 @@ const Navbar = () => {
                
                 
             </div>
+               {/*************** navbar menu item end here *********************/}
+
+
         </div>
-
-         
-      
-    </div>
-
-        <div className='xl:hidden 2xl:hidden md:block block'>
+         </div>
+       
+         {/*************** mobile menu for small device start here *********************/}
+        <div className='xl:hidden lg:hidden md:block block'>
           <MobileMenu />
          </div>
-   </section>
+         {/*************** mobile menu for small device end here *********************/}
+       </section>
+
+     // navbar section start here
   )
 }
 

@@ -11,6 +11,8 @@ import SteepProcess from '@/components/SteepProcess'
 
 const HomePage = () => {
   return (
+    // Home page section start here
+
     <div className='overflow-hidden'>
       <Header/>
       <Services/>
@@ -24,6 +26,9 @@ const HomePage = () => {
       <OurClient/>
        
     </div>
+    
+    // Home page section start here
+
   )
 }
 

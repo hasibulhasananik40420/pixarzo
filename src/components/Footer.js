@@ -67,12 +67,19 @@ const Footer = () => {
           <input className='w-[300px] h-[48px] outline-0 pl-7 text-[#F5F5F5] text-[14px] leading-6 font-normal' style={{background:"rgba(255, 255, 255, 0.10)", borderRadius:"48px"}} placeholder='Enter your email address' type="search" name="" id="" />
           <br />
 
-          <button className="bg-ButtonColor w-[180px] h-[56px] rounded-[37px] text-white text-[18px] font-medium leading-6 tracking-[0.09px] mt-6">Subscribe Now</button>
+         
+          <button className="group relative bg-ButtonColor w-[180px] h-[48px] rounded-[48px] text-white text-[18px] font-medium leading-6 tracking-[0.09px] mt-6 overflow-hidden transition duration-300 ease-in-out">
+              <span className="absolute inset-0 bg-gradient-to-r from-[#4CAF50] to-[#2196F3] opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"></span>
+              <span className="relative z-10 flex items-center justify-center h-full">
+              Subscribe Now
+              </span>
+            </button>
+       
         </div>
 
       </div>
 
-       <p className='text-[#F5F5F5] text-[16px] font-normal leading-6 text-center py-[32px] '>© Copyright 2023, All Rights Reserved by ClarityUI</p>
+       <p className='text-[#F5F5F5] text-[16px] font-normal leading-6 text-center py-[32px] '>© Copyright 2023, All Rights Reserved by Pixarzo</p>
        </FadeIn>
     </section>
   )

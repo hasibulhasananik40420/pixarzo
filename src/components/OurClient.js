@@ -7,14 +7,20 @@ import twitch from '@/assets/Our-Client/twitch.png'
 import webflow from '@/assets/Our-Client/webflow.png'
 import Image from 'next/image'
 import Marquee from "react-fast-marquee";
+
+
 const OurClient = () => {
   return (
+        // OurClient section start here
+
     <section className='max-w-[1320px] mx-auto px-3 my-[96px]'>
            <div className='flex flex-col justify-center items-center'>
            <h1 className='text-[#2B2B2B] text-[40px] font-bold leading-[56px]'>Our Clients</h1>
             <p className='text-[#444] text-[24px] font-normal leading-8 mt-6 lg:w-[609px] w-full text-center'>Our clients are the companies and startups who make the world go round</p>
             <Marquee speed={70} gradient={false}>
             <div className='flex items-center gap-[77px] mt-12'>
+
+            {/*************all image here *******************/}
 
              <Image src={google} alt='' width={120} height={40}/>
              <Image src={facebook} alt='' width={198} height={40}/>
@@ -26,6 +32,8 @@ const OurClient = () => {
             </Marquee>
            </div>
     </section>
+     // OurClient section end here
+
   )
 }
 

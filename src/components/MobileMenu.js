@@ -7,6 +7,8 @@ import { IoMdClose } from "react-icons/io";
 import Link from "next/link";
 
 const MobileMenu = () => {
+
+  
   const [isFixed, setIsFixed] = useState(false);
   const [show, setShow] = useState(false);
 
@@ -31,6 +33,7 @@ const MobileMenu = () => {
   }, [isFixed]); // Re-run effect only when isFixed changes
 
   return (
+      // mobile menu for small device start here 
     <section
       className={`${
         isFixed ? "fixed top-0" : ""
@@ -60,6 +63,7 @@ const MobileMenu = () => {
                 className="text-3xl cursor-pointer text-red-500 absolute top-4 right-4 duration-300"
               />
 
+                {/*************** navbar menu item start here *********************/}
               <div className="flex flex-col gap-8">
                 <div>
                   <Link onClick={() => setShow(false)}
@@ -121,11 +125,15 @@ const MobileMenu = () => {
                   </Link>
                 </div>
               </div>
+               {/*************** navbar menu item end here *********************/}
+
+
             </div>
           </div>
         </>
       )}
     </section>
+     // mobile menu for small device end here 
   );
 };
 

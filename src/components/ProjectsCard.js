@@ -10,7 +10,7 @@ import FadeIn, { FadeInStagger } from './FadeIn'
 const ProjectsCard = () => {
   return (
     <FadeInStagger>
-    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-6 xl:gap-6 xl:grid-cols-3'>
+    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-10 xl:grid-cols-3'>
         
         {/*************** project card 1 start here *****************/}
         <FadeIn>
@@ -38,7 +38,7 @@ const ProjectsCard = () => {
 
         <h1 className='text-[#28264D] text-[28px] font-bold leading-10 mt-4'>Royalfy Website Design </h1>
          
-         <p className='text-[#69778C] text-[18px] font-normal leading-[28px] mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscin g elit lobortis arcu enim urna adipiscing praesent velit viverra sit sempe hendrerit elementum.</p>
+         <p className='text-[#69778C] text-[16px] font-normal leading-[28px] mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscin g elit lobortis arcu enim urna adipiscing praesent velit viverra sit sempe hendrerit elementum.</p>
        </div>
        </FadeIn>
 
@@ -66,7 +66,7 @@ const ProjectsCard = () => {
 
         <h1 className='text-[#28264D] text-[28px] font-bold leading-10 mt-4'>Emonk Mobile App Design</h1>
          
-         <p className='text-[#69778C] text-[18px] font-normal leading-[28px] mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscin g elit lobortis arcu enim urna adipiscing praesent velit viverra sit sempe hendrerit elementum.</p>
+         <p className='text-[#69778C] text-[16px] font-normal leading-[28px] mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscin g elit lobortis arcu enim urna adipiscing praesent velit viverra sit sempe hendrerit elementum.</p>
        </div>
        </FadeIn>
 
@@ -94,7 +94,7 @@ const ProjectsCard = () => {
 
         <h1 className='text-[#28264D] text-[28px] font-bold leading-10 mt-4'>Brand Identity Design </h1>
          
-         <p className='text-[#69778C] text-[18px] font-normal leading-[28px] mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscin g elit lobortis arcu enim urna adipiscing praesent velit viverra sit sempe hendrerit elementum.</p>
+         <p className='text-[#69778C] text-[16px] font-normal leading-[28px] mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscin g elit lobortis arcu enim urna adipiscing praesent velit viverra sit sempe hendrerit elementum.</p>
        </div>
        </FadeIn>
 
