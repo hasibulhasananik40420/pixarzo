@@ -104,7 +104,7 @@ const FeedbackCard = () => {
             I am thinking about starting a business in mobile app design. came across this website and thought this would be a great place to start.
           </p>
 
-          <span className='lg:mt-12 xl:mt-20 mt-20 flex items-center relative'>
+          <span className='lg:mt-12 xl:mt-20 mt-16 flex items-center relative'>
             <Image className='w-[110px] h-[110px] z-30' src={image1} alt='' height={110} width={110} />
             <p className='bg-[#00AEEF] w-[105px] h-[56px] ml-[-45px]' style={{ borderRadius: '0px 40px 40px 0px' }}></p>
           </span>
@@ -123,7 +123,7 @@ const FeedbackCard = () => {
             I am thinking about starting a business in mobile app design. came across this website and thought this would be a great place to start.
           </p>
 
-          <span className='lg:mt-12 xl:mt-12 mt-20 flex items-center relative'>
+          <span className='lg:mt-12 xl:mt-12 mt-16 flex items-center relative'>
             <Image className='w-[110px] h-[110px] z-30' src={image1} alt='' height={110} width={110} />
             <p className='bg-[#00AEEF] w-[105px] h-[56px] ml-[-45px]' style={{ borderRadius: '0px 40px 40px 0px' }}></p>
           </span>
