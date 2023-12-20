@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react";
-import { BsArrowDown } from "react-icons/bs";
+import { GoArrowUp } from "react-icons/go";
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -35,7 +35,7 @@ const ScrollToTop = () => {
         isVisible ? "visible" : "hidden"
       }`}
     >
-      <BsArrowDown className="text-2xl animate-bounce text-white"/>
+      <GoArrowUp className="text-2xl animate-bounce text-white"/>
     </button>
   );
 };
