@@ -4,7 +4,6 @@ import Image from 'next/image'
 import image1 from '@/assets/Projects/image1.png'
 import image2 from '@/assets/Projects/image2.png'
 import image3 from '@/assets/Projects/image3.png'
-import { TbLiveView } from "react-icons/tb";
 import FadeIn, { FadeInStagger } from './FadeIn'
 
 const ProjectsCard = () => {
