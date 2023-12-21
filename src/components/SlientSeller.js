@@ -21,11 +21,10 @@ const SlientSeller = () => {
             <p className='text-[#444] text-[24px] font-normal leading-8 mt-6'>Shane Meendering</p>
 
 
-            <button className="group relative bg-ButtonColor w-[224px] h-[56px] rounded-[37px] text-white text-[18px] font-bold leading-6 tracking-[0.09px] mt-12 overflow-hidden transition duration-300 ease-in-out">
-              <span className="absolute inset-0 bg-gradient-to-r from-[#4CAF50] to-[#2196F3] opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"></span>
-              <span className="relative z-10 flex items-center justify-center h-full">
+            <button className="group relative bg-ButtonColor w-[224px] h-[56px] rounded-[37px] text-white text-[18px] font-bold leading-6 tracking-[0.09px] mt-12 duration-300 ease-in-out">
+              
               View our Designer
-              </span>
+              
             </button>
 
         </div>
