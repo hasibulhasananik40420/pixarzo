@@ -34,7 +34,7 @@ const OurTeamCard = () => {
                 </h3>
 
                 <button className="flex items-center justify-center mt-3 gap-2 text-[#0084FE] text-[16px] font-bold leading-6 tracking-[0.5px] hover:text-[#FF338F] duration-300">
-                  <p>Read bio</p> <MdArrowForward />
+                  Read bio <MdArrowForward />
                 </button>
               </div>
             </FadeIn>
@@ -62,7 +62,7 @@ const OurTeamCard = () => {
                 </h3>
 
                 <button className="flex items-center justify-center mt-3 gap-2 text-[#0084FE] text-[16px] font-bold leading-6 tracking-[0.5px] hover:text-[#FF338F] duration-300">
-                  <p>Read bio</p> <MdArrowForward />
+                  Read bio <MdArrowForward />
                 </button>
               </div>
             </FadeIn>
@@ -90,7 +90,7 @@ const OurTeamCard = () => {
                 </h3>
 
                 <button className="flex items-center justify-center mt-3 gap-2 text-[#0084FE] text-[16px] font-bold leading-6 tracking-[0.5px] hover:text-[#FF338F] duration-300">
-                  <p>Read bio</p> <MdArrowForward />
+                  Read bio <MdArrowForward />
                 </button>
               </div>
             </FadeIn>
@@ -118,7 +118,7 @@ const OurTeamCard = () => {
                 </h3>
 
                 <button className="flex items-center justify-center mt-3 gap-2 text-[#0084FE] text-[16px] font-bold leading-6 tracking-[0.5px] hover:text-[#FF338F] duration-300">
-                  <p>Read bio</p> <MdArrowForward />
+                  Read bio <MdArrowForward />
                 </button>
               </div>
             </FadeIn>

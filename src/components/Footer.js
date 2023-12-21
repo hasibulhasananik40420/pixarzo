@@ -68,11 +68,10 @@ const Footer = () => {
           <br />
 
          
-          <button className="group relative bg-ButtonColor w-[180px] h-[48px] rounded-[48px] text-white text-[18px] font-medium leading-6 tracking-[0.09px] mt-6 overflow-hidden transition duration-300 ease-in-out">
-              <span className="absolute inset-0 bg-gradient-to-r from-[#4CAF50] to-[#2196F3] opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"></span>
-              <span className="relative z-10 flex items-center justify-center h-full">
+           <button className="group relative bg-ButtonColor w-[180px] h-[48px] rounded-[48px] text-white text-[18px] font-medium leading-6 tracking-[0.09px] mt-6 duration-300 ease-in-out">
+            
               Subscribe Now
-              </span>
+              
             </button>
        
         </div>
