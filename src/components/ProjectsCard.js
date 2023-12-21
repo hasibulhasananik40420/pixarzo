@@ -26,7 +26,6 @@ const ProjectsCard = () => {
         
       />
       <div className="absolute inset-0 bg-gray-800 opacity-0 group-hover:opacity-40 transition-opacity flex items-center justify-center">
-        <TbLiveView className="text-[#F25260] text-3xl hover:cursor-pointer" />
       </div>
     </div>
         
@@ -55,7 +54,6 @@ const ProjectsCard = () => {
        
       />
       <div className="absolute inset-0 bg-gray-800 opacity-0 group-hover:opacity-40 transition-opacity flex items-center justify-center">
-        <TbLiveView className="text-[#F25260] text-3xl hover:cursor-pointer" />
       </div>
     </div>
         
@@ -83,7 +81,6 @@ const ProjectsCard = () => {
        
       />
       <div className="absolute inset-0 bg-gray-800 opacity-0 group-hover:opacity-40 transition-opacity flex items-center justify-center">
-        <TbLiveView className="text-[#F25260] text-3xl hover:cursor-pointer" />
       </div>
     </div>
         

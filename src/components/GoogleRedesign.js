@@ -19,11 +19,10 @@ const GoogleRedesign = () => {
                <p className='mt-6 text-[#444] text-[24px] font-normal leading-8'>We create new UI on the Google website for users. Fixed some issues at the user level.</p>
 
 
-               <button className="group relative bg-ButtonColor w-[196px] h-[56px] rounded-[37px] text-white text-[18px] font-semibold leading-6 tracking-[ 0.9px] mt-12 overflow-hidden transition duration-300 ease-in-out">
-              <span className="absolute inset-0 bg-gradient-to-r from-[#4CAF50] to-[#2196F3] opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"></span>
-              <span className="relative z-10 flex items-center justify-center h-full">
+               <button className="group relative bg-ButtonColor w-[196px] h-[56px] rounded-[37px] text-white text-[18px] font-semibold leading-6 tracking-[ 0.9px] mt-12 duration-300 ease-in-out">
+             
                 Learn More
-              </span>
+            
               </button>
 
             </div>
