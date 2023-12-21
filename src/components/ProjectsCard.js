@@ -31,10 +31,10 @@ const ProjectsCard = () => {
     </div>
         
         
-        <span className='flex justify-between items-center mt-6'>
+        <div className='flex justify-between items-center mt-6'>
         <p className='text-[#F25260] text-[16px] font-normal leading-6'>Royalfy</p>
         <p className='text-[#69778C] text-[16px] font-normal leading-6'>Dec 02, 2022</p>
-        </span>
+        </div>
 
         <h1 className='text-[#28264D] text-[28px] font-bold leading-10 mt-4'>Royalfy Website Design </h1>
          
@@ -59,10 +59,10 @@ const ProjectsCard = () => {
       </div>
     </div>
         
-        <span className='flex justify-between items-center mt-6'>
+        <div className='flex justify-between items-center mt-6'>
         <p className='text-[#F25260] text-[16px] font-normal leading-6'>Emonk</p>
         <p className='text-[#69778C] text-[16px] font-normal leading-6'>Dec 15, 2022</p>
-        </span>
+        </div>
 
         <h1 className='text-[#28264D] text-[28px] font-bold leading-10 mt-4'>Emonk Mobile App Design</h1>
          
@@ -87,10 +87,10 @@ const ProjectsCard = () => {
       </div>
     </div>
         
-        <span className='flex justify-between items-center mt-6'>
+        <div className='flex justify-between items-center mt-6'>
         <p className='text-[#F25260] text-[16px] font-normal leading-6'>Pixarzo</p>
         <p className='text-[#69778C] text-[16px] font-normal leading-6'>Nov 15, 2022</p>
-        </span>
+        </div>
 
         <h1 className='text-[#28264D] text-[28px] font-bold leading-10 mt-4'>Brand Identity Design </h1>
          

@@ -11,13 +11,13 @@ const SteepProcess = () => {
    <FadeInStagger>
     <section className='max-w-[1320px] mx-auto px-3'>
        <FadeIn>
-        <span>
+        <div>
          
        <Image src={processIcon} alt='' height={40} width={40}/>
        <h1 className="text-[#28264D] text-[40px] font-bold leading-[50px] mt-4 lg:w-[514px] w-full">A Simple,yet
        effective six step process.</h1>
 
-        </span>
+        </div>
         </FadeIn>
 
         <div className='lg:flex gap-[112px] mt-12'>
