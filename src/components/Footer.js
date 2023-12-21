@@ -64,7 +64,7 @@ const Footer = () => {
        <div className='mt-12 md:mt-12 lg:mt-0'>
           <h1 className='text-[#F5F5F5] text-[16px] font-semibold leading-6 tracking-[1px] uppercase mb-[32px]'>Newsletter</h1>
 
-          <input className='w-[300px] h-[48px] outline-0 pl-7 text-[#F5F5F5] text-[14px] leading-6 font-normal' style={{background:"rgba(255, 255, 255, 0.10)", borderRadius:"48px"}} placeholder='Enter your email address' type="search" name="" id="" />
+          <input className='w-[300px] h-[48px] outline-0 pl-7 text-[#F5F5F5] text-[14px] leading-6 font-normal' style={{background:"rgba(255, 255, 255, 0.10)", borderRadius:"48px"}} placeholder='Enter your email address' type="search" name="email" id="emailInput" />
           <br />
 
          
