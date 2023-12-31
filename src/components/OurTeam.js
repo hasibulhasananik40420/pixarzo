@@ -11,7 +11,7 @@ const OurTeam = () => {
     <section className="bg-PrimaryColor px-3 py-[96px]">
       <div className="max-w-[1320px] mx-auto">
           {/*********** our team title start here ***********/}
-        <span>
+        <div>
         <FadeIn>
           <Image src={teamIcon} alt="" width={40} height={40} />
 
@@ -24,7 +24,7 @@ const OurTeam = () => {
             things together and builds stunning products
           </p>
           </FadeIn>
-        </span>
+        </div>
 
 
         {/*********** our team card start here ***********/}

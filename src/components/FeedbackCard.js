@@ -66,7 +66,7 @@ const FeedbackCard = () => {
             I have worked with many web designers in the past and I can say that I have never had an experience like this. I have been working with Figma for a few months now and it has been a unique experience.
           </p>
 
-          <div className='lg:mt-12 xl:mt-12 mt-12 flex items-center relative'>
+          <div className='lg:mt-12 xl:mt-20 mt-12 flex items-center relative'>
             <Image className='w-[110px] h-[110px] z-30' src={image1} alt='' height={110} width={110} />
             <p className='bg-[#00AEEF] w-[105px] h-[56px] ml-[-45px]' style={{ borderRadius: '0px 40px 40px 0px' }}></p>
           </div>

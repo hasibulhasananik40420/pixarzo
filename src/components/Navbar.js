@@ -50,6 +50,9 @@ const Navbar = () => {
             
              {/*************** navbar menu item start here *********************/}
             <div className="flex gap-8 mr-10">
+
+           
+               
                <Link className="h-7 overflow-x-hidden overflow-y-hidden inline-flex relative group" href={'/'}>
                  <h1 className="text-[17px] text-white font-medium leading-[26px] group-hover:text-[#FF338F]">Home</h1>
                  <span className="absolute w-full h-[2px] bg-[#FF338F] left-0 bottom-0 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
@@ -70,7 +73,7 @@ const Navbar = () => {
                  <span className="absolute w-full h-[2px] bg-[#FF338F] left-0 bottom-0 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
                </Link>
                
-                 <Link className="h-7 overflow-x-hidden overflow-y-hidden inline-flex relative group" href={'/'}>
+                 <Link className="h-7 overflow-x-hidden overflow-y-hidden inline-flex relative group" href={'/contact'}>
                  <h1 className="text-[17px] text-white font-medium leading-[26px] group-hover:text-[#FF338F]">Contact Us</h1>
                  <span className="absolute w-full h-[2px] bg-[#FF338F] left-0 bottom-0 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
                </Link>

@@ -11,7 +11,6 @@ const Feedback = () => {
     <FeedbackCard/>
     {/************* FeedbackCard end here *******************/}
 
-
    </section>
        // Feedback section end here
 

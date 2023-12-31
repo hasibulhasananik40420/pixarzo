@@ -8,6 +8,7 @@ import { IoMdClose } from "react-icons/io";
 import Link from "next/link";
 
 const MobileMenu = () => {
+  
   const [isFixed, setIsFixed] = useState(false);
   const [show, setShow] = useState(false);
 
