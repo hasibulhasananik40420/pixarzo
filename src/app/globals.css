@@ -6,6 +6,17 @@
 @tailwind utilities;
 
 
+.common-image{
+  background-image: url('../assets/common/banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: black;
+  
+
+}
+
+
 .slick-slide > div{
     padding: 0 10px;
 }
@@ -30,3 +41,10 @@
   ul.slick-dots li.slick-active button {
     background-color: #28163B; 
   }
+  
+
+
+
+
+
+

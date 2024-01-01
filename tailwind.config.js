@@ -13,8 +13,9 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
 
-      backgroundColor:{
+      colors:{
         PrimaryColor:"#28264D",
+        secondaryColor:"#FF338F",
         ButtonColor:"#FF338F",
       },
 

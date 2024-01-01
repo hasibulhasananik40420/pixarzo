@@ -12,7 +12,7 @@ const Navbar = () => {
   const [isFixed, setIsFixed] = useState(false);
 
   const handleScroll = () => {
-    const scrollThreshold = 500;
+    const scrollThreshold = 300;
     const scrolled = window.scrollY;
 
     if (scrolled > scrollThreshold && !isFixed) {
@@ -68,7 +68,7 @@ const Navbar = () => {
                  <span className="absolute w-full h-[2px] bg-[#FF338F] left-0 bottom-0 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
                </Link>
                
-                 <Link className="h-7 overflow-x-hidden overflow-y-hidden inline-flex relative group" href={'/'}>
+                 <Link className="h-7 overflow-x-hidden overflow-y-hidden inline-flex relative group" href={'/blog'}>
                  <h1 className="text-[17px] text-white font-medium leading-[26px] group-hover:text-[#FF338F]">Blog</h1>
                  <span className="absolute w-full h-[2px] bg-[#FF338F] left-0 bottom-0 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
                </Link>
