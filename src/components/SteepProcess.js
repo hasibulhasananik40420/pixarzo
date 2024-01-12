@@ -1,4 +1,4 @@
-"use client"
+
 import processIcon from '@/assets/Process/processIcon.png'
 import image from '@/assets/Process/image1.png'
 import Image from 'next/image'

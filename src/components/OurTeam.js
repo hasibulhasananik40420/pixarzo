@@ -1,4 +1,4 @@
-"use client";
+
 import teamIcon from "@/assets/Our-team/teamIcon.png";
 import Image from "next/image";
 import OurTeamCard from "./OurTeamCard";

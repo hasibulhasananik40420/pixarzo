@@ -1,4 +1,4 @@
-"use client";
+
 import image1 from "@/assets/Our-team/image1.png";
 import image2 from "@/assets/Our-team/image2.png";
 import image3 from "@/assets/Our-team/image3.png";
@@ -6,6 +6,8 @@ import image4 from "@/assets/Our-team/image4.png";
 import Image from "next/image";
 import { MdArrowForward } from "react-icons/md";
 import FadeIn, { FadeInStagger } from "./FadeIn";
+import buttonhover from '@/styles/buttonhover.module.css'
+
 
 const OurTeamCard = () => {
   return (
@@ -21,6 +23,7 @@ const OurTeamCard = () => {
                 alt=""
                 width={312}
                 height={371}
+                placeholder="blur"
               />
               <div
                 className="h-[138px] bg-[#E4F5FF] mt-[-36px] absolute w-full p-6"
@@ -49,6 +52,7 @@ const OurTeamCard = () => {
                 alt=""
                 width={312}
                 height={371}
+                placeholder="blur"
               />
               <div
                 className="h-[138px] bg-[#E4F5FF] mt-[-36px] absolute w-full p-6"
@@ -77,6 +81,7 @@ const OurTeamCard = () => {
                 alt=""
                 width={312}
                 height={371}
+                placeholder="blur"
               />
               <div
                 className="h-[138px] bg-[#E4F5FF] mt-[-36px] absolute w-full p-6"
@@ -105,6 +110,7 @@ const OurTeamCard = () => {
                 alt=""
                 width={312}
                 height={371}
+                placeholder="blur"
               />
               <div
                 className="h-[138px] bg-[#E4F5FF] mt-[-36px] absolute w-full p-6"
@@ -126,10 +132,18 @@ const OurTeamCard = () => {
         </div>
 
         <div className="flex justify-center mt-12">
-          <button className="group relative bg-ButtonColor w-[246px] h-[56px] rounded-[37px] text-white text-[18px] font-bold leading-6 tracking-[0.09px] mt-12">
-            View Team Members
+         
+
+
+          <button
+            className={` ${buttonhover.bbtl} bg-secondaryColor w-[246px] h-[56px] text-white text-[18px] font-bold mt-12 leading-6 tracking-[0.09px]`}
+          >
+             View Team Members
           </button>
         </div>
+
+
+
       </div>
     </FadeInStagger>
   );

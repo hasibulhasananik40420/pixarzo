@@ -1,4 +1,4 @@
-"use client"
+
 import logo from '@/assets/Footer/Pixarzo Logo 1.png'
 import Image from 'next/image'
 import { GrFacebookOption } from "react-icons/gr";
@@ -6,6 +6,7 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa6";
 import { FaGoogle } from "react-icons/fa";
 import FadeIn from './FadeIn';
+import buttonhover from '@/styles/buttonhover.module.css'
 
 const Footer = () => {
   return (
@@ -67,12 +68,13 @@ const Footer = () => {
           <input className='w-[300px] h-[48px] outline-0 pl-7 text-[#F5F5F5] text-[14px] leading-6 font-normal' style={{background:"rgba(255, 255, 255, 0.10)", borderRadius:"48px"}} placeholder='Enter your email address' type="search" name="email" id="emailInput" />
           <br />
 
-         
-           <button className="group relative bg-ButtonColor w-[180px] h-[48px] rounded-[48px] text-white text-[18px] font-medium leading-6 tracking-[0.09px] mt-6 duration-300 ease-in-out">
-            
-              Subscribe Now
-              
-            </button>
+        
+
+            <button
+                className={` ${buttonhover.bbtl} bg-secondaryColor w-[180px] h-[48px] rounded-[48px] text-white text-[18px] font-medium leading-6 tracking-[0.09px] mt-6`}
+              >
+                 Subscribe Now
+              </button>
        
         </div>
 

@@ -1,4 +1,3 @@
-"use client"
 
 import Image from 'next/image'
 import image1 from '@/assets/Projects/image1.png'
@@ -15,17 +14,14 @@ const ProjectsCard = () => {
         <FadeIn>
        <div className='xl:w-[420px] lg:w-[380px] w-full '>
         
-        <div className="relative overflow-hidden group">
-      <Image
-        className="object-contain w-full h-full transition-opacity duration-500 transform hover:opacity-75 hover:brightness-75"
+        <div className="xl:w-[420px] lg:w-[380px] w-full h-[280px] overflow-hidden">
+         <Image
+        className="w-full object-cover object-center transition-all duration-700 hover:scale-110"
         src={image1}
         alt=''
-        height={280}
-        width={420}
+        placeholder='blur'
         
       />
-      <div className="absolute inset-0 bg-gray-800 opacity-0 group-hover:opacity-40 transition-opacity flex items-center justify-center">
-      </div>
     </div>
         
         
@@ -43,17 +39,14 @@ const ProjectsCard = () => {
      {/*************** project card 2 start here *****************/}
      <FadeIn>
        <div className='xl:w-[420px] lg:w-[380px] w-full '>
-       <div className="relative overflow-hidden group">
-      <Image
-        className="object-contain w-full h-full transition-opacity duration-500 transform hover:opacity-75 hover:brightness-75"
+       <div className="xl:w-[420px] lg:w-[380px] w-full h-[280px] overflow-hidden">
+         <Image
+        className="w-full object-cover object-center transition-all duration-700 hover:scale-110"
         src={image2}
         alt=''
-        height={280}
-        width={420}
-       
+        placeholder='blur'
+        
       />
-      <div className="absolute inset-0 bg-gray-800 opacity-0 group-hover:opacity-40 transition-opacity flex items-center justify-center">
-      </div>
     </div>
         
         <div className='flex justify-between items-center mt-6'>
@@ -70,19 +63,15 @@ const ProjectsCard = () => {
   {/*************** project card 3 start here *****************/}
   <FadeIn>
        <div className='xl:w-[420px] lg:w-[380px] w-full '>
-       <div className="relative overflow-hidden group">
-      <Image
-        className="object-contain w-full h-full transition-opacity duration-500 transform hover:opacity-75 hover:brightness-75"
+       <div className="xl:w-[420px] lg:w-[380px] w-full h-[280px] overflow-hidden">
+         <Image
+        className="w-full object-cover object-center transition-all duration-700 hover:scale-110"
         src={image3}
         alt=''
-        height={280}
-        width={420}
-       
-      />
-      <div className="absolute inset-0 bg-gray-800 opacity-0 group-hover:opacity-40 transition-opacity flex items-center justify-center">
-      </div>
-    </div>
+        placeholder='blur'
         
+      />
+    </div>
         <div className='flex justify-between items-center mt-6'>
         <p className='text-[#F25260] text-[16px] font-normal leading-6'>Pixarzo</p>
         <p className='text-[#69778C] text-[16px] font-normal leading-6'>Nov 15, 2022</p>

@@ -1,9 +1,11 @@
-"use client";
+
 import contact from "@/assets/GetInTouch/contact us image.png";
 import GetInTouchIcon from "@/assets/GetInTouch/GetInTouch.png";
 import group from "@/assets/GetInTouch/Group 2.png";
 import Image from "next/image";
 import FadeIn from "./FadeIn";
+import buttonhover from '@/styles/buttonhover.module.css'
+
 
 const GetInTouch = () => {
   return (
@@ -29,12 +31,12 @@ const GetInTouch = () => {
             potenti laoreet risus egestas et lorem leo dui.
           </p>
 
-        
-            <button className="group relative bg-ButtonColor w-[169px] h-[56px] rounded-[37px] text-white text-[18px] font-semibold leading-6 tracking-[0.09px] mt-12 duration-300 ease-in-out">
-             
-              Contact us
-           
-            </button>
+
+            <button
+                className={` ${buttonhover.bbtl} bg-secondaryColor w-[196px] h-[56px] text-white text-[18px] font-semibold leading-6 tracking-[ 0.9px] mt-12`}
+              >
+               Contact us
+              </button>
 
           <Image
             className="mt-[39px] w-[271px] h-[271px]"
@@ -57,6 +59,7 @@ const GetInTouch = () => {
             height={632}
             width={652}
             layout="responsive"
+            placeholder="blur"
           />
          </div>
           {/************* image part end here *******************/}

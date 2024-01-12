@@ -1,0 +1,51 @@
+
+
+
+   .bbtl {
+    --color: rgba(88, 101, 242, 1);
+    border-radius: 37px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    z-index: 1;
+  }
+  
+  .bbtl::before, .bbtl::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+  }
+  
+  .bbtl::before {
+    top: -1em;
+    left: -1em;
+  }
+  
+  .bbtl::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+  }
+  
+  .bbtl:hover::before, .bbtl:hover::after {
+    height: 410px;
+    width: 410px;
+  }
+  
+  .bbtl:hover {
+    color: rgb(10, 25, 30);
+    color: #fff;
+  }
+  
+  .bbtl:active {
+    filter: brightness(.8);
+  }
+  
+  

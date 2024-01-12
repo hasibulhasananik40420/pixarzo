@@ -1,10 +1,10 @@
 "use client"
 
-import Link from "next/link"
 import { useEffect, useState } from "react";
 import MobileMenu from "./MobileMenu";
 import Logo from "./Logo";
-
+import navbar from '@/styles/navbar.module.css'
+import Link from "next/link";
 
 
 const Navbar = () => {
@@ -12,7 +12,7 @@ const Navbar = () => {
   const [isFixed, setIsFixed] = useState(false);
 
   const handleScroll = () => {
-    const scrollThreshold = 300;
+    const scrollThreshold = 200;
     const scrolled = window.scrollY;
 
     if (scrolled > scrollThreshold && !isFixed) {
@@ -39,7 +39,7 @@ const Navbar = () => {
    <section>
     
      <div className={`${
-      isFixed ? "fixed top-0" : ""
+      isFixed ? "fixed top-0 " : ""
     } bg-PrimaryColor h-[96px] px-3 transition-all ease-in-out duration-500 w-full z-50 lg:block xl:block hidden`}>
         <div className="max-w-[1360px] mx-auto flex justify-between  items-center h-[96px] ">
            <div>
@@ -49,35 +49,14 @@ const Navbar = () => {
            </div>
             
              {/*************** navbar menu item start here *********************/}
-            <div className="flex gap-8 mr-10">
+            <div className="flex ">
 
-           
-               
-               <Link className="h-7 overflow-x-hidden overflow-y-hidden inline-flex relative group" href={'/'}>
-                 <h1 className="text-[17px] text-white font-medium leading-[26px] group-hover:text-[#FF338F]">Home</h1>
-                 <span className="absolute w-full h-[2px] bg-[#FF338F] left-0 bottom-0 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
-               </Link>
-               
-                 <Link className="h-7 overflow-x-hidden overflow-y-hidden inline-flex relative group" href={'/'}>
-                 <h1 className="text-[17px] text-white font-medium leading-[26px] group-hover:text-[#FF338F]">Case Study</h1>
-                 <span className="absolute w-full h-[2px] bg-[#FF338F] left-0 bottom-0 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
-               </Link>
-               
-                 <Link className="h-7 overflow-x-hidden overflow-y-hidden inline-flex relative group" href={'/'}>
-                 <h1 className="text-[17px] text-white font-medium leading-[26px] group-hover:text-[#FF338F]">About Us</h1>
-                 <span className="absolute w-full h-[2px] bg-[#FF338F] left-0 bottom-0 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
-               </Link>
-               
-                 <Link className="h-7 overflow-x-hidden overflow-y-hidden inline-flex relative group" href={'/blog'}>
-                 <h1 className="text-[17px] text-white font-medium leading-[26px] group-hover:text-[#FF338F]">Blog</h1>
-                 <span className="absolute w-full h-[2px] bg-[#FF338F] left-0 bottom-0 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
-               </Link>
-               
-                 <Link className="h-7 overflow-x-hidden overflow-y-hidden inline-flex relative group" href={'/contact'}>
-                 <h1 className="text-[17px] text-white font-medium leading-[26px] group-hover:text-[#FF338F]">Contact Us</h1>
-                 <span className="absolute w-full h-[2px] bg-[#FF338F] left-0 bottom-0 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
-               </Link>
-               
+                 <Link href={'/'} className={`${navbar.btn}`}>Home</Link>
+                 <Link href={'/'} className={`${navbar.btn}`}>Case Study</Link>
+                 <Link href={'/'} className={`${navbar.btn}`}>About Us</Link>
+                 <Link href={'/'} className={`${navbar.btn}`}>Blog</Link>
+                 <Link href={'/'} className={`${navbar.btn}`}>Contact Us</Link>
+                
                 
             </div>
                {/*************** navbar menu item end here *********************/}
