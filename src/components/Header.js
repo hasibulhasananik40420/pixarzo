@@ -10,7 +10,7 @@ const Header = () => {
     // header section start here
 
     <section className="bg-PrimaryColor px-3 py-[52px]">
-      <div className="lg:flex items-center gap-[61px] max-w-[1360px] mx-auto">
+      <div className="lg:flex items-center gap-[61px] max-w-[1360px] mx-auto mt-16 md:mt-20 lg:mt-0 2xl:mt-0">
         {/************* header text part start here *************/}
         <FadeIn>
           <div className="lg:w-[648px] w-full">
@@ -30,7 +30,7 @@ const Header = () => {
                 Get Started
               </button>
 
-              <button className="bg-[#333156] w-[163px] h-[56px] rounded-[37px] text-white text-[18px] font-bold leading-6 tracking-[0.09px] hover:bg-[#242349] hover:border duration-300">
+              <button className="bg-[#333156] w-[163px] h-[56px] rounded-[37px] text-white text-[18px] font-bold leading-6 tracking-[0.09px] hover:bg-[#47BDFF]  duration-300">
                 Contact Us
               </button>
             </div>

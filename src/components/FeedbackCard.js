@@ -3,8 +3,10 @@
 
 import Image from 'next/image';
 import quote from '@/assets/Feedback/quote 1.png';
-import image1 from '@/assets/Feedback/image1.png';
-import image2 from '@/assets/Feedback/image2.png';
+import image1 from '@/assets/Feedback/image1.jpg';
+import image2 from '@/assets/Feedback/image2.jpg';
+import image3 from '@/assets/Feedback/image3.jpg';
+import image4 from '@/assets/Feedback/image4.jpg';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -15,7 +17,7 @@ const FeedbackCard = () => {
     dots: true,
     infinite: true,
     speed: 1000,
-    autoplay: true,
+    // autoplay: true,
     slidesToShow: 3,
     slidesToScroll: 1,
 
@@ -67,7 +69,7 @@ const FeedbackCard = () => {
           </p>
 
           <div className='lg:mt-12 xl:mt-12 mt-12 flex items-center relative'>
-            <Image className='w-[110px] h-[110px] z-30' src={image1} alt='' height={110} width={110} />
+          <Image className='w-[80px] h-[80px] z-30 rounded-full border-[5px] border-white object-cover' src={image1} alt='' placeholder='blur' />
             <p className='bg-[#00AEEF] w-[105px] h-[56px] ml-[-45px]' style={{ borderRadius: '0px 40px 40px 0px' }}></p>
           </div>
 
@@ -86,7 +88,7 @@ const FeedbackCard = () => {
           </p>
 
           <div className='lg:mt-20 xl:mt-20 mt-20 flex items-center relative'>
-            <Image className='w-[110px] h-[110px] z-30' src={image2} alt='' height={110} width={110} />
+          <Image className='w-[80px] h-[80px] z-30 rounded-full border-[5px] border-white object-cover' src={image2} alt='' placeholder='blur' />
             <p className='bg-[#00AEEF] w-[105px] h-[56px] ml-[-45px]' style={{ borderRadius: '0px 40px 40px 0px' }}></p>
           </div>
 
@@ -105,7 +107,7 @@ const FeedbackCard = () => {
           </p>
 
           <div className='lg:mt-12 xl:mt-20 mt-16 flex items-center relative'>
-            <Image className='w-[110px] h-[110px] z-30' src={image1} alt='' height={110} width={110} />
+          <Image className='w-[80px] h-[80px] z-30 rounded-full border-[5px] border-white object-cover' src={image3} alt='' placeholder='blur' />
             <p className='bg-[#00AEEF] w-[105px] h-[56px] ml-[-45px]' style={{ borderRadius: '0px 40px 40px 0px' }}></p>
           </div>
 
@@ -124,7 +126,7 @@ const FeedbackCard = () => {
           </p>
 
           <div className='lg:mt-12 xl:mt-12 mt-16 flex items-center relative'>
-            <Image className='w-[110px] h-[110px] z-30' src={image1} alt='' height={110} width={110} />
+          <Image className='w-[80px] h-[80px] z-30 rounded-full border-[5px] border-white object-cover' src={image4} alt='' placeholder='blur' />
             <p className='bg-[#00AEEF] w-[105px] h-[56px] ml-[-45px]' style={{ borderRadius: '0px 40px 40px 0px' }}></p>
           </div>
 

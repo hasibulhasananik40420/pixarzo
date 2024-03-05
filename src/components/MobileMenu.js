@@ -1,112 +1,81 @@
-"use client"
-
-import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+"use client";
+import React, { useState } from "react";
 import Logo from "./Logo";
-import Link from "next/link";
-import MenuIcon from "./MenuIcon";
-import navbar from '@/styles/navbar.module.css'
-
+import { CiMenuFries } from "react-icons/ci";
+import { VscChromeClose } from "react-icons/vsc";
 
 const MobileMenu = () => {
-  
-  const [isFixed, setIsFixed] = useState(false);
-  const [show, setShow] = useState(false);
-  
-  const toggleMenu = () => {
-    setShow(!show);
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
+
+ 
+
+  const handleMenuClick = () => {
+    setIsMenuVisible(!isMenuVisible);
   };
 
-  const handleScroll = () => {
-    const scrollThreshold = 300;
-    const scrolled = window.scrollY;
-
-    if (scrolled > scrollThreshold && !isFixed) {
-      setIsFixed(true);
-    } else if (scrolled <= scrollThreshold && isFixed) {
-      setIsFixed(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    // Cleanup the event listener on component unmount
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [isFixed]); // Re-run effect only when isFixed changes
-
-  const sidebarVariants = {
-    hidden: { x: "-100%" },
-    visible: { x: 0 },
-  };
 
   return (
-    <section className={`${isFixed ? "fixed top-0" : ""} bg-PrimaryColor h-[96px] px-3 transition-all ease-in-out duration-500 w-full z-50 `}>
-      <div className="flex justify-between items-center h-[96px] px-3">
-        <Logo />
-        <MenuIcon onClick={toggleMenu} isOpen={show} />
+    <div>
+      <div className="bg-PrimaryColor h-[92px] flex justify-between items-center px-4 shadow-md fixed top-0 w-full z-50">
+        <div>
+          <Logo />
+        </div>
+
+        <div>
+          <CiMenuFries
+            onClick={handleMenuClick}
+            className="text-2xl text-white cursor-pointer"
+          />
+        </div>
       </div>
 
-      <AnimatePresence>
-        {show && (
-          <>
-            <motion.div
-              className="fixed top-0 left-0 w-full h-full  z-50"
-              onClick={() => setShow(false)}
-               initial="hidden"
-              animate="visible"
-              exit="hidden"
-              variants={sidebarVariants}
-              transition={{ duration: 0.5 }}
+      {isMenuVisible && (
+        <div className="fixed top-0 right-0 h-screen w-[80%] z-50 bg-[#2C304A] p-4 text-white">
+          <span className="flex justify-end cursor-pointer">
+            <VscChromeClose
+              onClick={handleMenuClick}
+              className="text-xl text-red-500 "
             />
+          </span>
 
-            <motion.div
-              className="absolute lg:hidden xl:hidden top-0 right-0 w-full h-screen flex flex-col items-start"
-              variants={sidebarVariants}
-              initial="hidden"
-              animate="visible"
-              exit="hidden"
-              transition={{ duration: 0.5 }}
+          <div className="mt-10 flex flex-col gap-4">
+            <div
+              onClick={handleMenuClick}
+              className="bg-[#0F172A] text-[20px] text-white font-JakartaFont font-medium py-2 px-4 rounded cursor-pointer hover:bg-secondaryColor duration-300"
             >
-              <div className="w-[80%] h-full bg-[#112240] flex flex-col z-50 relative pt-20 px-8 md:px-12">
+              Home
+            </div>
 
-                <div className="flex flex-col gap-8">
-                  
-                    <Link onClick={() => setShow(false)} href={"/"} className="w-[250px] h-[56px] bg-secondaryColor flex justify-center items-center rounded-md">
-                      <h1 className="text-[24px] text-white font-medium leading-[26px] ">Home</h1>
-                    </Link>
-                  
-                   <Link onClick={() => setShow(false)} href={"/"} className="w-[250px] h-[56px] bg-secondaryColor flex justify-center items-center rounded-md">
-                      <h1 className="text-[24px] text-white font-medium leading-[26px] ">Case Study</h1>
-                      
-                    </Link>
-                    <Link onClick={() => setShow(false)} href={"/"} className="w-[250px] h-[56px] bg-secondaryColor flex justify-center items-center rounded-md">
-                      <h1 className="text-[24px] text-white font-medium leading-[26px] "> About Us</h1>
-                      
-                    </Link>
-                    <Link onClick={() => setShow(false)} href={"/"} className="w-[250px] h-[56px] bg-secondaryColor flex justify-center items-center rounded-md">
-                      <h1 className="text-[24px] text-white font-medium leading-[26px] ">Blog</h1>
-                      
-                    </Link>
-                    <Link onClick={() => setShow(false)} href={"/"} className="w-[250px] h-[56px] bg-secondaryColor flex justify-center items-center rounded-md">
-                      <h1 className="text-[24px] text-white font-medium leading-[26px] ">Contact Us</h1>
-                      
-                    </Link>
-                  
+            <div
+              onClick={handleMenuClick}
+              className="bg-[#0F172A] text-[20px] text-white font-JakartaFont font-medium py-2 px-4 rounded cursor-pointer hover:bg-secondaryColor duration-300"
+            >
+              Case Study
+            </div>
 
-                 
-                  
-                </div>
-              </div>
-            </motion.div>
-          </>
-        )}
-      </AnimatePresence>
-    </section>
+            <div
+              onClick={handleMenuClick}
+              className="bg-[#0F172A] text-[20px] text-white font-JakartaFont font-medium py-2 px-4 rounded cursor-pointer hover:bg-secondaryColor duration-300"
+            >
+              About Us
+            </div>
+            <div
+              onClick={handleMenuClick}
+              className="bg-[#0F172A] text-[20px] text-white font-JakartaFont font-medium py-2 px-4 rounded cursor-pointer hover:bg-secondaryColor duration-300"
+            >
+              Blog
+            </div>
+            <div
+              onClick={handleMenuClick}
+              className="bg-[#0F172A] text-[20px] text-white font-JakartaFont font-medium py-2 px-4 rounded cursor-pointer hover:bg-secondaryColor duration-300"
+            >
+              Contact Us
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
   );
 };
 
 export default MobileMenu;
-
